@@ -30,7 +30,7 @@ class WebsiteController extends AbstractController
     public function cart() : Response
     {
         return $this->render('website/cart.html.twig', [
-            'l' => [1, 2, 3, 4, 5, 6, 7]
+            'l' => [1, 2]
         ]);
     }
 }

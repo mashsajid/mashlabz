@@ -2302,6 +2302,20 @@ ul {
   background-color: #ff3368;
 }
 
+/*.dropdown .shop-cart {*/
+/*  transition: all 0.5s;*/
+/*  overflow: hidden;*/
+/*  transform-origin: top center;*/
+/*  transform: scale(1, 0);*/
+/*  display: block;*/
+/*  border: 0px solid transparent;*/
+/*  background-color: transparent;*/
+/*}*/
+
+.dropdown .shop-cart {
+  color: white;
+}
+
 /* line 174, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_menu.scss */
 .dropdown .dropdown-menu .dropdown-item {
   font-size: 14px;
@@ -7588,11 +7602,12 @@ h6 {
 .shopping-cart {
   margin: 20px 0;
   float: left;
-  background: white;
+  background: #4e2d5c;
   width: 320px;
   position: relative;
   border-radius: 3px;
   padding: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.15);
 
 }
 
@@ -7624,6 +7639,7 @@ h6 {
   display: block;
   padding-top: 10px;
   font-size: 16px;
+  color: #fff;
 }
 
 .shopping-cart .shopping-cart-items .item-price {
@@ -7650,19 +7666,19 @@ h6 {
   float: right;
 }
 
-.shopping-cart:after {
-  bottom: 100%;
-  left: 89%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-bottom-color: white;
-  border-width: 8px;
-  margin-left: -8px;
-}
+/*.shopping-cart:after {*/
+/*  bottom: 100%;*/
+/*  left: 89%;*/
+/*  border: solid transparent;*/
+/*  content: " ";*/
+/*  height: 0;*/
+/*  width: 0;*/
+/*  position: absolute;*/
+/*  pointer-events: none;*/
+/*  border-bottom-color: white;*/
+/*  border-width: 8px;*/
+/*  margin-left: -8px;*/
+/*}*/
 
 .cart-icon {
   color: #515783;
