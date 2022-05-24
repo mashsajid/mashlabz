@@ -2,71 +2,130 @@
 
 {% block body %}
     <section class="cart_area padding_top">
-        <div class="container pt-sm-5 pb-5">
+        <div class="container pb-5">
             <div class="cart_inner">
-                <div class="card cart-container">
-                    <div class="card-block">
-                        <div class="cart-overview js-cart" data-refresh-url="#">
-                            <ul class="cart-items">
-                                <li class="cart-item">
-                                    <div class="product-line-grid">
-                                        <div class="product-line-grid-left col-md-3 col-xs-4">
-                                            <span class="product-image media-middle">
-                                                <img src="https://store.roboticsbd.com/3992-cart_default/raspberry-pi-4-computer-complete-set-pack-2-robotics-bangladesh.jpg" alt="Raspberry Pi 4 Computer Complete Set Pack-2">
-                                            </span>
+                <div class="row d-flex justify-content-center my-4">
+                    <div class="col-md-8">
+                        <div class="card mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="mb-0">Cart - 2 items</h5>
+                            </div>
+                            <div class="card-body">
+                                <!-- Single item -->
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0 border-white">
+                                        <!-- Image -->
+                                        <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
+                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/12a.webp"
+                                                 class="w-100" alt="Blue Jeans Jacket" />
+                                            <a href="#">
+                                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                            </a>
                                         </div>
-                                        <div class="product-line-grid-body float-lg-left col-md-4 col-xs-8">
-                                            <div class="product-line-info">
-                                                <a class="label_name" href="#" data-id_customization="0">
-                                                    Raspberry Pi 4 Computer Complete Set Pack-2
-                                                </a>
-                                            </div>
-                                            <div class="product-line-info product-price h5 ">
-                                                <div class="current-price">
-                                                    <span class="price">BDT&nbsp;23,720</span>
-                                                </div>
-                                            </div>
-                                            <br>
-                                            <div class="product-line-info">
-                                                <span class="label">MicroSD Card Size:</span>
-                                                <span class="value">Sandisk 64GB Class 10 UHS-I microSDXC</span>
-                                            </div>
-                                            <div class="product-line-info">
-                                                <span class="label">RAM:</span>
-                                                <span class="value">8GB</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="product-line-grid-right product-line-actions float-lg-right col-md-5 col-xs-12">
-                                            <div class="row">
-                                                <div class="col-xs-4 hidden-md-up"></div>
-                                                <div class="col-md-10 col-xs-6">
-                                                    <div class="row">
-                                                        <div class="col-md-6 col-xs-6 qty">
-                                                            <div class="input-group bootstrap-touchspin"><span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span><input class="js-cart-line-product-quantity form-control" data-down-url="https://store.roboticsbd.com/cart?update=1&amp;id_product=1142&amp;id_product_attribute=171&amp;token=6826419682d5f50fd815fff1973a40b9&amp;op=down" data-up-url="https://store.roboticsbd.com/cart?update=1&amp;id_product=1142&amp;id_product_attribute=171&amp;token=6826419682d5f50fd815fff1973a40b9&amp;op=up" data-update-url="https://store.roboticsbd.com/cart?update=1&amp;id_product=1142&amp;id_product_attribute=171&amp;token=6826419682d5f50fd815fff1973a40b9" data-product-id="1142" type="text" value="1" name="product-quantity-spin" min="1" style="display: block;"><span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span><span class="input-group-btn-vertical"><button class="btn btn-touchspin js-touchspin js-increase-product-quantity bootstrap-touchspin-up" type="button"><i class="material-icons touchspin-up"></i></button><button class="btn btn-touchspin js-touchspin js-decrease-product-quantity bootstrap-touchspin-down" type="button"><i class="material-icons touchspin-down"></i></button></span></div>
-                                                        </div>
-                                                        <div class="col-md-6 col-xs-2 price">
-                                                            <span class="product-price">
-                                                                <strong>
-                                                                    BDT&nbsp;23,720
-                                                                </strong>
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-2 col-xs-2 text-xs-right">
-                                                    <div class="cart-line-product-actions">
-                                                        <a class="remove-from-cart" rel="nofollow" href="https://store.roboticsbd.com/cart?delete=1&amp;id_product=1142&amp;id_product_attribute=171&amp;token=6826419682d5f50fd815fff1973a40b9" data-link-action="delete-from-cart" data-id-product="1142" data-id-product-attribute="171" data-id-customization="">
-                                                            <i class="fa fa-trash float-xs-left"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="clearfix"></div>
+                                        <!-- Image -->
                                     </div>
-                                </li>
-                            </ul>
+
+                                    <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+                                        <!-- Data -->
+                                        <p><strong>Blue denim shirt</strong></p>
+                                        <p>Color: blue</p>
+                                        <p>Size: M</p>
+                                        <button type="button" class="btn btn-primary btn-sm me-1 mb-2" data-mdb-toggle="tooltip"
+                                                title="Remove item">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-danger btn-sm mb-2" data-mdb-toggle="tooltip"
+                                                title="Move to the wish list">
+                                            <i class="fas fa-heart"></i>
+                                        </button>
+                                        <!-- Data -->
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                                        <!-- Quantity -->
+                                        <label class="form-label text-center">Quantity</label>
+                                        <div class="d-flex mb-4" style="max-width: 300px">
+                                            <button class="btn btn-primary px-3 mr-2"
+                                                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                                <i class="fas fa-minus"></i>
+                                            </button>
+
+                                            <div class="form-outline">
+                                                <input id="form1" min="0" name="quantity" value="1" type="number" class="form-control" />
+                                            </div>
+
+                                            <button class="btn btn-primary px-3 ml-2"
+                                                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <!-- Quantity -->
+
+                                        <!-- Price -->
+                                        <p class="text-start text-md-center">
+                                            <strong>$17.99</strong>
+                                        </p>
+                                        <!-- Price -->
+                                    </div>
+                                </div>
+                                <!-- Single item -->
+
+{#                                <hr class="my-4" />#}
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <p><strong>Expected shipping delivery</strong></p>
+                                <p class="mb-0">12.10.2020 - 14.10.2020</p>
+                            </div>
+                        </div>
+                        <div class="card mb-4 mb-lg-0">
+                            <div class="card-body">
+                                <p><strong>We accept</strong></p>
+                                <img class="me-2" width="45px"
+                                     src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg"
+                                     alt="Visa" />
+                                <img class="me-2" width="45px"
+                                     src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/amex.svg"
+                                     alt="American Express" />
+                                <img class="me-2" width="45px"
+                                     src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg"
+                                     alt="Mastercard" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="mb-0">Summary</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li
+                                            class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                                        Products
+                                        <span>$53.98</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0">
+                                        Shipping
+                                        <span>Gratis</span>
+                                    </li>
+                                    <li
+                                            class="list-group-item d-flex justify-content-between align-items-center border-white border-bottom-0 px-0 mb-3">
+                                        <div>
+                                            <strong>Total amount</strong>
+                                            <strong>
+                                                <p class="mb-0">(including VAT)</p>
+                                            </strong>
+                                        </div>
+                                        <span><strong>$53.98</strong></span>
+                                    </li>
+                                </ul>
+
+                                <button type="button" class="btn btn-primary btn-lg btn-block">
+                                    Go to checkout
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
