@@ -17,7 +17,13 @@
                                 <a class="nav-link" href="{{ path('app_index') }}">Home</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="{{ path('app_shop') }}">Shop</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="{{ path('app_contact') }}">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ path('app_contact') }}">About Us</a>
                             </li>
                         </ul>
                     </div>
@@ -32,18 +38,21 @@
                                 </span>
                         </label>
                         <nav id="menu">
-                            <a href="#">Lorem.</a>
-                            <a href="#">Nesciunt!</a>
-                            <a href="#">Magnam.</a>
-                            <a href="#">Ipsum.</a>
-                            <a href="#">Voluptatem.</a>
-                            <a href="#">Quibusdam.</a>
+                            <a href="#">Login</a>
+                            <a href="#">Wishlist</a>
+                            <hr class="my-4">
+                            <a href="#">Home</a>
+                            <a href="#">Shop</a>
+                            <a href="#">Contact</a>
+                            <a href="#">About Us</a>
                         </nav>
                     </div>
 
                     <div class="hearer_icon d-flex">
-                        <a id="search_1" href="javascript:void(0)"><i class="ti-search"></i></a>
-                        <a href=""><i class="ti-heart"></i></a>
+{#                        <div class="search_bar">#}
+{#                            <input type="text" class="search-click" name="" placeholder="search here..." />#}
+{#                        </div>#}
+                        <a href="#"><i class="ti-heart d-none d-lg-block d-md-block"></i></a>
                         <div class="dropdown cart d-none d-md-block d-lg-block">
                             <a class="dropdown-toggle" href="{{ path('app_cart') }}" id="navbarDropdown3" role="button"
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -84,7 +93,7 @@
                                         </li>
                                     </ul>
 
-                                    <a href="#" class="button">Checkout</a>
+                                    <a href="{{ path('app_cart') }}" class="button">Checkout</a>
                                 </div>
                                 <!--end shopping-cart -->
                             </div>
@@ -92,7 +101,7 @@
                         <div class="cart d-md-none d-lg-none">
                             <a href="{{ path('app_cart') }}"> <i class="fas fa-cart-plus"></i> </a>
                         </div>
-                        <a href="{{ path('app_login') }}"><i class="ti-user"></i></a>
+                        <a href="{{ path('app_login') }}"><i class="ti-user d-none d-lg-block d-md-block"></i></a>
                     </div>
                 </nav>
             </div>

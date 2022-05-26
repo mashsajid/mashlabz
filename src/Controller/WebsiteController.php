@@ -17,6 +17,14 @@ class WebsiteController extends AbstractController
     }
 
     /**
+     * @Route("shop", name="app_shop")
+     */
+    public function shop() : Response
+    {
+        return $this->render('website/index.html.twig', []);
+    }
+
+    /**
      * @Route("/contact", name="app_contact")
      */
     public function contact() : Response
