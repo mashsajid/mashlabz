@@ -7877,18 +7877,21 @@ h6 {
 }
 
 .search-click {
-  border: 1px solid #ccc;
+  border: none;
   outline: none;
   background-color: transparent;
   border-radius: 5px;
-  width: 20px;
+  width: 25px;
   height: 20px;
-  padding: 25px;
+  padding: 2px;
   transition: all 0.5s;
+  cursor: pointer;
 }
 .search-click:focus {
   width: 230px;
-  padding-left: 15px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  cursor: text;
 }
 
 .search-click::placeholder {
@@ -7898,7 +7901,7 @@ h6 {
 .search-click {
   position: relative;
   overflow: hidden;
-  height: 50px;
+  height: 35px;
   color: white;
 }
 .search-click input {
@@ -7910,6 +7913,46 @@ h6 {
   height: 50px;
   left: 0%;
   padding: 10px;
+}
+
+.search-click::-webkit-input-placeholder {
+  font-family: FontAwesome;
+  font-weight: normal;
+  overflow: visible;
+  vertical-align: top;
+  display: inline-block !important;
+  padding-left: 5px;
+  padding-top: 2px;
+  /*color: hsl(9, 40%, 60%);*/
+  color: white;
+}
+
+.search-click::-moz-placeholder  {
+  font-family: FontAwesome;
+  font-weight: normal;
+  overflow: visible;
+  vertical-align: top;
+  display: inline-block !important;
+  padding-left: 5px;
+  padding-top: 2px;
+  /*color: hsl(9, 40%, 60%);*/
+  color: white;
+}
+
+.search-click:-ms-input-placeholder  {
+  font-family: FontAwesome;
+  font-weight: normal;
+  overflow: visible;
+  vertical-align: top;
+  display: inline-block !important;
+  padding-left: 5px;
+  padding-top: 2px;
+  /*color: hsl(9, 40%, 60%);*/
+  color: white;
+}
+
+.nav_others {
+  padding-top: 10px;
 }
 
 @media (max-width: 576px) {
