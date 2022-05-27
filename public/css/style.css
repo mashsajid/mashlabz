@@ -257,7 +257,7 @@ button:focus,
 /* line 174, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_common.scss */
 .section_tittle h2 {
   font-size: 36px;
-  color: #1a1a1a;
+  color: #fff;
   line-height: 27px;
   font-weight: 700;
   position: relative;
@@ -2368,11 +2368,11 @@ ul {
   .dropdown:hover .dropdown-menu {
     transform: scale(1);
     display: block;
-    color: #ff3368;
+    color: #fff;
   }
   /* line 240, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_menu.scss */
   .dropdown .dropdown-item:hover {
-    color: #ff3368 !important;
+    color: #fff !important;
   }
   /* line 245, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_menu.scss */
   .navbar-brand img {
@@ -2707,6 +2707,7 @@ ul {
 /* line 26, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_feature_part.scss */
 .feature_part .single_feature_post_text p {
   line-height: 13px;
+  color: black;
 }
 
 /* line 30, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_feature_part.scss */
@@ -2714,6 +2715,7 @@ ul {
   font-size: 24px;
   font-weight: 700;
   margin-top: 21px;
+  color: black;
 }
 
 @media (max-width: 576px) {
@@ -2729,7 +2731,7 @@ ul {
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 2px;
-  color: #ff3368;
+  color: #432fd6;
   position: absolute;
   left: 50px;
   bottom: 60px;
@@ -2744,7 +2746,7 @@ ul {
 /* line 61, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_feature_part.scss */
 .feature_part .single_feature_post_text .feature_btn i {
   font-weight: 12px;
-  color: #ff3368;
+  color: #432fd6;
   margin-left: 6px;
 }
 
@@ -2826,6 +2828,7 @@ ul {
   position: absolute;
   right: 0;
   top: -62px;
+  color: white;
 }
 
 @media (max-width: 991px) {
@@ -2866,7 +2869,7 @@ ul {
   width: 1px;
   height: 16px;
   content: "";
-  background-color: #000;
+  background-color: #fff;
 }
 
 /* line 54, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_product_list.scss */
@@ -2894,7 +2897,7 @@ ul {
 /* line 66, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_product_list.scss */
 .single_product_item .single_product_text {
   padding: 32px 0;
-  background-color: #fff;
+  background-color: #4e2d5c;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -2904,17 +2907,19 @@ ul {
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 14px;
+  color: white;
 }
 
 /* line 77, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_product_list.scss */
 .single_product_item .single_product_text h3 {
   font-weight: 300;
   font-size: 18px;
+  color: white;
 }
 
 /* line 82, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_product_list.scss */
 .single_product_item .single_product_text a {
-  color: #ff3368;
+  color: #007bff;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 500;
@@ -2931,7 +2936,7 @@ ul {
   float: right;
   font-size: 18px;
   line-height: 26px;
-  color: #000;
+  color: white;
 }
 
 /* line 102, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_product_list.scss */
@@ -3058,7 +3063,7 @@ ul {
 /* line 7, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_best_seller.scss */
 .best_seller .single_product_item .single_product_text {
   padding: 35px 0 0;
-  background-color: #fff;
+  background-color: #4e2d5c;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -3068,17 +3073,19 @@ ul {
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 14px;
+  color: black;
 }
 
 /* line 16, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_best_seller.scss */
 .best_seller .single_product_item .single_product_text h3 {
   font-weight: 300;
   font-size: 18px;
+  color: black;
 }
 
 /* line 20, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_best_seller.scss */
 .best_seller .single_product_item .single_product_text a {
-  color: #ff3368;
+  color: #007bff;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 500;
@@ -3127,7 +3134,7 @@ ul {
 .subscribe_area h5 {
   font-size: 14px;
   font-weight: 400;
-  color: #ff3368;
+  color: #432fd6;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -7892,6 +7899,10 @@ h6 {
   padding: 15px;
   border: 1px solid #ccc;
   cursor: text;
+}
+
+.search-click:focus + .navbar-brand {
+  display: none;
 }
 
 .search-click::placeholder {

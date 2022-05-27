@@ -353,7 +353,7 @@ inputNumber($('.input-number'));
   ]
   });  
  }
-    
+
 
 
 
