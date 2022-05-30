@@ -24,44 +24,48 @@
         <div class="container">
             <div class="d-none d-sm-block mb-5 pb-4">
                 <div id="map" style="height: 480px;"></div>
-                <script>
-                    function initMap() {
-                        var uluru = {
-                            lat: -25.363,
-                            lng: 131.044
-                        };
-                        var grayStyles = [{
-                            featureType: "all",
-                            stylers: [{
-                                saturation: -90
-                            },
-                                {
-                                    lightness: 50
-                                }
-                            ]
-                        },
-                            {
-                                elementType: 'labels.text.fill',
-                                stylers: [{
-                                    color: '#ccdee9'
-                                }]
-                            }
-                        ];
-                        var map = new google.maps.Map(document.getElementById('map'), {
-                            center: {
-                                lat: -31.197,
-                                lng: 150.744
-                            },
-                            zoom: 9,
-                            styles: grayStyles,
-                            scrollwheel: false
-                        });
-                    }
-                </script>
-                <script
-                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap">
-                </script>
+                <script type="text/javascript" src="https://reportallusa.com/overlay/js.php?v=5&map=OpenLayers3&client=FVv7W5Az99"></script>
+                <script type="text/javascript">
+                    var map;
 
+                    repDomReady(function() {
+                        map = new ol.Map({
+                            target: 'map',
+                            controls: [new ol.control.Zoom()],
+                            layers: [
+                                new ol.layer.Tile({
+                                    source: new ol.source.OSM()
+                                }),
+                                new ol.layer.Tile({
+                                    source: new ol.source.XYZ({
+                                        url: REP.Layer.OpenLayers3.parcelsPrefixedURL(REP.ClientKey)
+                                    }),
+                                    maxResolution: REP.Layer.OpenLayers3.parcelsMaxResolution(),
+                                    extent: REP.Layer.OpenLayers3.parcelsExtent()
+                                })
+                            ],
+                            view: new ol.View({
+                                center: ol.proj.transform([90.3969, 23.878], 'EPSG:4326', 'EPSG:3857'),
+                                zoom: 15
+                            })
+                        });
+
+                        map.addOverlay(overlay);
+
+                        popup_closer.onclick = function(evt) {
+                            overlay.setPosition(undefined);
+                            popup_closer.blur();
+                            return false;
+                        }
+
+                        map.on('singleclick', function(evt) {
+                            var coordinate = evt.coordinate;
+                            overlay.setPosition(coordinate);
+                        });
+
+                    });
+
+                </script>
             </div>
 
 
@@ -109,21 +113,21 @@
                     <div class="media contact-info">
                         <span class="contact-info__icon"><i class="ti-home"></i></span>
                         <div class="media-body">
-                            <h3>Buttonwood, California.</h3>
-                            <p>Rosemead, CA 91770</p>
+                            <h3>Dhaka, Bangladesh.</h3>
+                            <p>Uttara, DH 1230</p>
                         </div>
                     </div>
-                    <div class="media contact-info">
-                        <span class="contact-info__icon"><i class="ti-tablet"></i></span>
-                        <div class="media-body">
-                            <h3>00 (440) 9865 562</h3>
-                            <p>Mon to Fri 9am to 6pm</p>
-                        </div>
-                    </div>
+{#                    <div class="media contact-info">#}
+{#                        <span class="contact-info__icon"><i class="ti-tablet"></i></span>#}
+{#                        <div class="media-body">#}
+{#                            <h3>00 (440) 9865 562</h3>#}
+{#                            <p>Mon to Fri 9am to 6pm</p>#}
+{#                        </div>#}
+{#                    </div>#}
                     <div class="media contact-info">
                         <span class="contact-info__icon"><i class="ti-email"></i></span>
                         <div class="media-body">
-                            <h3>support@colorlib.com</h3>
+                            <h3>mashlabz@protonmail.com</h3>
                             <p>Send us your query anytime!</p>
                         </div>
                     </div>

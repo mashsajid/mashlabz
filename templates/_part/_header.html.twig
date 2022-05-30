@@ -41,7 +41,19 @@
                                 </span>
                         </label>
                         <nav id="menu">
-                            <a href="#">Login</a>
+                            {% set lastname = 'DDDDDDDDDDDDD' %}
+                            {% if app.user %}
+                                <a href="#">
+                                    {% if lastname | length > 10 %}
+                                        {{ lastname[:10] ~ '.....' }}
+                                    {% else %}
+                                        {{ lastname }}
+                                    {% endif %}
+                                </a>
+                            {% else %}
+                                <a href="{{ path('app_login') }}">Login</a>
+
+                            {% endif %}
                             <a href="#">Wishlist</a>
                             <hr class="my-4">
                             <a href="#">Home</a>

@@ -7269,7 +7269,7 @@ h6 {
 
 /* line 9, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_contact.scss */
 .contact-info__icon i, .contact-info__icon span {
-  color: #8f9195;
+  color: #ffffff;
   font-size: 27px;
 }
 
@@ -7278,7 +7278,7 @@ h6 {
   font-size: 16px;
   margin-bottom: 0;
   font-size: 16px;
-  color: #2a2a2a;
+  color: #fff;
 }
 
 /* line 23, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_contact.scss */
@@ -7288,7 +7288,7 @@ h6 {
 
 /* line 29, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_contact.scss */
 .contact-info .media-body p {
-  color: #8a8a8a;
+  color: #b4b4b4;
 }
 
 /*=================== contact banner end ====================*/
@@ -7376,7 +7376,7 @@ h6 {
 /* line 101, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_contact.scss */
 .form-contact .form-control::placeholder {
   font-weight: 300;
-  color: #999999;
+  color: #fff;
 }
 
 /* line 107, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_contact.scss */
@@ -7795,7 +7795,7 @@ h6 {
   bottom: 0;
   left: 0;
   z-index: -1;
-  width: 22em;
+  width: 35em;
   background: #4e2d5c;
   content: '';
   transform: skewX(15deg) translateX(-100%);
