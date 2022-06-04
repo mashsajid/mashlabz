@@ -2897,7 +2897,7 @@ ul {
 /* line 66, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_product_list.scss */
 .single_product_item .single_product_text {
   padding: 32px 0;
-  background-color: #4e2d5c;
+  background-color: #1c1121;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -2947,6 +2947,7 @@ ul {
 /* line 105, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_product_list.scss */
 .single_product_item:hover .single_product_text {
   padding: 32px 32px;
+  background-color: #4e2d5c;
 }
 
 /* line 109, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_product_list.scss */
@@ -3063,7 +3064,7 @@ ul {
 /* line 7, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_best_seller.scss */
 .best_seller .single_product_item .single_product_text {
   padding: 35px 0 0;
-  background-color: #4e2d5c;
+  background-color: #1c1121;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -3474,9 +3475,15 @@ ul {
   color: #ff3368;
 }
 
+.left_sidebar_area .widgets_inner ul li span {
+  color: #fff;
+}
+
 /* line 196, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_product.scss */
 .left_widgets {
   margin-bottom: 30px;
+  padding: 5px;
+  background-color: #4e2d5c;
 }
 
 /* line 199, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_product.scss */
@@ -3519,7 +3526,7 @@ ul {
   margin-bottom: 20px;
   margin-top: 20px;
   font-size: 18px;
-  color: #2a2a2a;
+  color: #fff;
   font-weight: 500;
   line-height: 40px;
   position: relative;
@@ -3559,7 +3566,7 @@ ul {
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   font-weight: normal;
-  color: #797979;
+  color: #fff;
   position: relative;
 }
 
@@ -3578,7 +3585,8 @@ ul {
 .product_top_bar {
   clear: both;
   display: flex;
-  padding: 10px 0;
+  padding: 10px 13px;
+  background-color: #4e2d5c;
 }
 
 @media (max-width: 576px) {
@@ -3773,12 +3781,19 @@ ul {
 .price_value input {
   border: 0px;
   text-align: center;
-  max-width: 30px;
+  max-width: 50px;
+  color: white;
+  background-color: #4e2d5c;
+}
+
+.price_value input:first-child {
+  margin-left: 10px;
 }
 
 /* line 485, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_product.scss */
 .price_value span {
   margin: 5px 5px 0;
+  color: white;
 }
 
 /* line 490, ../../01 cl html template/03_jun 2019/188_Aranoz shop_html/sass/_product.scss */

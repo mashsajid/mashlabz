@@ -78,36 +78,24 @@
                                 <div class="dropdown-menu shop-cart bg-transparent dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <div class="shopping-cart">
                                         <div class="shopping-cart-header">
-                                            <span class="item-quantity">Total Quantity: 3</span>
+                                            <span class="item-quantity">Total Quantity: {{ totalquantity }}</span>
                                             <div class="shopping-cart-total">
                                                 <span class="lighter-text">Total:</span>
-                                                <span class="main-color-text">$2,229.97</span>
+                                                <span class="main-color-text">$ {{ cartPrice }}</span>
                                             </div>
                                         </div>
                                         <!--end shopping-cart-header -->
                                         <ul class="shopping-cart-items">
-                                            <li class="clearfix border-bottom border-white pb-4">
-                                                <a class="link" href="#">
-                                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item1.jpg" alt="item1" />
-                                                    <span class="item-name">Sony DSC-RX100M III</span>
-                                                    <span class="item-price">$849.99</span>
-                                                    <span class="item-quantity">Quantity: 01</span>
-                                                </a>
-                                            </li>
-
-                                            <li class="clearfix border-bottom border-white pb-4">
-                                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item2.jpg" alt="item1" />
-                                                <span class="item-name">KS Automatic Mechanic...</span>
-                                                <span class="item-price">$1,249.99</span>
-                                                <span class="item-quantity">Quantity: 01</span>
-                                            </li>
-
-                                            <li class="clearfix border-bottom border-white pb-4">
-                                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item3.jpg" alt="item1" />
-                                                <span class="item-name">Kindle, 6" Glare-Free To...</span>
-                                                <span class="item-price">$129.99</span>
-                                                <span class="item-quantity">Quantity: 01</span>
-                                            </li>
+                                            {% for x in 1..2 %}
+                                                <li class="clearfix border-bottom border-white pb-4">
+                                                    <a class="link" href="#">
+                                                        <img src="{{ products[x].image }}" height="70" width="70" alt="item1" />
+                                                        <span class="item-name">{{ products[x].name }}</span>
+                                                        <span class="item-price">${{ products[x].price }}</span>
+                                                        <span class="item-quantity">Quantity: {{ products[x].quantity }}</span>
+                                                    </a>
+                                                </li>
+                                            {% endfor %}
                                         </ul>
 
                                         <a href="{{ path('app_cart') }}" class="button">Checkout</a>
@@ -116,7 +104,7 @@
                                 </div>
                             </div>
                             <div class="cart d-md-none d-lg-none">
-                                <a href="{{ path('app_cart') }}"> <i class="fas fa-cart-plus"></i> </a>
+                                <a href="{{ path('app_cart') }}"> <i class="fas fa-cart-plus"><span class="cart-length">{{ products | length }}</span></i> </a>
                             </div>
                             <a href="{{ path('app_login') }}"><i class="ti-user d-none d-lg-block d-md-block"></i></a>
                         </div>

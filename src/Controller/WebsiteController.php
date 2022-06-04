@@ -21,7 +21,7 @@ class WebsiteController extends AbstractController
      */
     public function shop() : Response
     {
-        return $this->render('website/index.html.twig', []);
+        return $this->render('website/shop.html.twig', []);
     }
 
     /**
@@ -37,8 +37,6 @@ class WebsiteController extends AbstractController
      */
     public function cart() : Response
     {
-        return $this->render('website/cart.html.twig', [
-            'l' => [1, 2]
-        ]);
+        return $this->render('website/cart.html.twig', []);
     }
 }
