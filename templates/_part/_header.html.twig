@@ -73,7 +73,7 @@
                             <div class="dropdown cart d-none d-md-block d-lg-block">
                                 <a class="dropdown-toggle" href="{{ path('app_cart') }}" id="navbarDropdown3" role="button"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fas fa-cart-plus"></i>
+                                    <i class="fas fa-cart-plus"><span class="cart_items">{{ totalquantity }}</span></i>
                                 </a>
                                 <div class="dropdown-menu shop-cart bg-transparent dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <div class="shopping-cart">
@@ -97,14 +97,13 @@
                                                 </li>
                                             {% endfor %}
                                         </ul>
-
                                         <a href="{{ path('app_cart') }}" class="button">Checkout</a>
                                     </div>
                                     <!--end shopping-cart -->
                                 </div>
                             </div>
                             <div class="cart d-md-none d-lg-none">
-                                <a href="{{ path('app_cart') }}"> <i class="fas fa-cart-plus"><span class="cart-length">{{ products | length }}</span></i> </a>
+                                <a href="{{ path('app_cart') }}"> <i class="fas fa-cart-plus"><span class="cart_items">{{ products | length }}</span></i> </a>
                             </div>
                             <a href="{{ path('app_login') }}"><i class="ti-user d-none d-lg-block d-md-block"></i></a>
                         </div>
