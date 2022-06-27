@@ -1,0 +1,39 @@
+// variable scss
+@import "components/variables";
+
+@import "~bootstrap";
+@import "~font-awesome";
+@import "~themify-icons-scss/scss/themify-icons.scss";
+
+// mixin scss
+@import "components/mixins";
+@import "components/extends";
+// default scss
+@import "layout/common";
+
+// button scss
+@import "components/button";
+
+@import "layout/blog";
+@import "layout/single_blog";
+// body scss
+@import "layout/menu";
+@import "layout/nevbar";
+@import "layout/banner";
+@import "layout/feature_part";
+@import "layout/product_list";
+@import "layout/our_offer";
+@import "layout/best_seller";
+@import "layout/subscribe_area";
+@import "layout/client_logo";
+@import "layout/product";
+@import "layout/confirmation_part";
+
+@import "components/elements";
+@import "layout/blog_part";
+@import "layout/contact";
+
+// breadcrumb scss
+@import "layout/breadcrumb";
+
+@import "layout/footer";
