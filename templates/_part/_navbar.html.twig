@@ -8,45 +8,46 @@
             <i class="fa fa-times"></i>
         </div>
 
-        <div class="logo">
-            <a href="{{ path('app_index') }}"></a>
+        <div class="user-area flex text-center">
+            <h5>Welcome to Mash Labz!</h5>
+            <a class="btn" href="#">Login/Signup</a>
         </div>
 
         <ul class="list-unstyled menu-elements">
             <li class="active">
-                <a class="scroll-link" href="#top-content"><i class="fa fa-home"></i> Home</a>
+                <a class="scroll-link" href="{{ path("app_index") }}"><i class="fa fa-home"></i> Home</a>
             </li>
             <li>
-                <a class="scroll-link" href="#section-1"><i class="fa fa-cog"></i> What we do</a>
+                <a class="scroll-link" href="#section-1"><i class="fa fa-shopping-bag"></i> Shop</a>
             </li>
             <li>
-                <a class="scroll-link" href="#section-2"><i class="fa fa-user"></i> About us</a>
+                <a class="scroll-link" href="#section-5"><i class="fa fa-cart-arrow-down"></i> Cart <span class="cart_count">500</span></a>
             </li>
             <li>
-                <a class="scroll-link" href="#section-5"><i class="fa fa-pencil"></i> Portfolio</a>
+                <a class="scroll-link" href="#section-5"><i class="fa fa-heart-o"></i> Whishlist <span class="cart_count">5</span></a>
+            </li>
+            <li>
+                <a data-toggle="collapse" aria-expanded="false" class="dropdown-toggle otherSections" role="button" aria-controls="otherSections">
+                    <i class="fa fa-list"></i>Category
+                </a>
+                <div class="drp-menu">
+                    <ul class="collapse list-unstyled animate__animated animate__slideInLeft" id="otherSections">
+                        <li>
+                            <a class="scroll-link" href="#section-3">Our projects</a>
+                        </li>
+                        <li>
+                            <a class="scroll-link" href="#section-4">We think that...</a>
+                        </li>
+                    </ul>
+                </div>
             </li>
             <li>
                 <a class="scroll-link" href="#section-6"><i class="fa fa-envelope"></i> Contact us</a>
             </li>
             <li>
-                <a href="#" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle otherSections" role="button" aria-controls="otherSections">
-                    <i class="fas fa-sync"></i>Other sections
-                </a>
-                <ul class="collapse list-unstyled" id="otherSections">
-                    <li>
-                        <a class="scroll-link" href="#section-3">Our projects</a>
-                    </li>
-                    <li>
-                        <a class="scroll-link" href="#section-4">We think that...</a>
-                    </li>
-                </ul>
+                <a class="scroll-link" href="#section-2"><i class="fa fa-user"></i> About us</a>
             </li>
         </ul>
     </nav>
     <!-- End sidebar -->
-
-    <!-- Content -->
-    <div class="content">
-    <!-- End content -->
-
 </div>

@@ -62,31 +62,36 @@
 			border: 0px solid transparent;
 		}
 	
-		i {
+		span {
 			color: $white_color;
-			position: relative;
+			position: absolute;
 			z-index: 1;
-			font-size: 15px;
-	
-			&:after {
-				position: absolute;
-				border-radius: 50%;
-				background-color: rgb(241, 61, 128);
-				width: 14px;
-				height: 14px;
-				right: -8px;
-				top: -8px;
-				content: "5";
-				text-align: center;
-				line-height: 15px;
-				font-size: 10px;
-				color: $white-color;
-			}
-	
+			font-size: 10px;
+			border-radius: 50%;
+			background-color: $red;
+			width: 20px;
+			height: 20px;
+			right: -14px;
+			top: -12px;
+			text-align: center;
+			line-height: 20px;
+			font-family: "Poppins", sans-serif;
 		}
 	}
 }
 
+.cart_count{
+	position: absolute;
+	border-radius: 50%;
+	background-color: $red;
+	width: 20px;
+	height: 20px;
+	margin-left: 8px;
+	text-align: center;
+	line-height: 20px;
+	font-size: 10px;
+	color: $white-color;
+}
 
 
 .menu_fixed {
@@ -150,8 +155,10 @@
 	cursor: text;
 }
 
-.search-click:focus + .navbar-brand {
-	display: none;
+.search-click:focus {
+	.navbar-brand {
+		display: none;
+	}
 }
 
 .search-click::placeholder {
@@ -254,12 +261,12 @@
 			.dropdown-menu {
 				transform: scale(1);
 				display: block;
-				color: $btn_bg;
+				color: $secondary_color;
 			}
 		}
 
 		.dropdown-item:hover {
-			color: $btn_bg !important;
+			color: $secondary_hover !important;
 		}
 	}
 
@@ -332,7 +339,7 @@
 		ul {
 			li .nav-link {
 				&:hover {
-					color: $btn_bg !important;
+					color: $secondary_hover !important;
 				}
 
 			}
