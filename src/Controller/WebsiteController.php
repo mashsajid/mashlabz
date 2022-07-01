@@ -23,4 +23,12 @@ class WebsiteController extends AbstractController
     {
         return $this->render("website/contact.html.twig");
     }
+
+    /**
+     * @Route("/search", name="app_search")
+     */
+    public function search() : Response
+    {
+        return $this->render("_part/_searchbar.html.twig");
+    }
 }

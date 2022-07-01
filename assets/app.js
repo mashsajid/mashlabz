@@ -10,6 +10,8 @@ require('animate.css/animate.css');
 
 import './styles/style.scss';
 
+import "owp.glyphicons/glyphicons.css";
+
 import 'wow.js';
 
 import 'jquery';
@@ -17,9 +19,13 @@ import 'jquery';
 import 'popper.js';
 
 // start the Stimulus application
-import './bootstrap';
+import 'bootstrap';
 
 import './js/nevbar';
+
+import './js/voice_recognition';
+
+import './js/searchbar';
 
 // import './js/jquery.magnific-popup';
 //
