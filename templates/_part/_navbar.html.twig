@@ -1,53 +1,46 @@
-<div class="wrapper">
+<div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="{{ path("app_index") }}">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_1"
+               role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Shop
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
+                <a class="dropdown-item" href="category.html"> shop category</a>
+                <a class="dropdown-item" href="single-product.html">product details</a>
 
-    <!-- Sidebar -->
-    <nav class="sidebar">
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_3"
+               role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                pages
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown_2">
+                <a class="dropdown-item" href="login.html"> login</a>
+                <a class="dropdown-item" href="tracking.html">tracking</a>
+                <a class="dropdown-item" href="checkout.html">product checkout</a>
+                <a class="dropdown-item" href="cart.html">shopping cart</a>
+                <a class="dropdown-item" href="confirmation.html">confirmation</a>
+                <a class="dropdown-item" href="elements.html">elements</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_2"
+               role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                blog
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown_2">
+                <a class="dropdown-item" href="blog.html"> blog</a>
+                <a class="dropdown-item" href="single-blog.html">Single blog</a>
+            </div>
+        </li>
 
-        <!-- close sidebar menu -->
-        <div class="dismiss">
-            <i class="fa fa-times"></i>
-        </div>
-
-        <div class="user-area flex text-center">
-            <h5>Welcome to Mash Labz!</h5>
-            <a class="btn" href="#">Login/Signup</a>
-        </div>
-
-        <ul class="list-unstyled menu-elements">
-            <li class="active">
-                <a class="scroll-link" href="{{ path("app_index") }}"><i class="fa fa-home"></i> Home</a>
-            </li>
-            <li>
-                <a class="scroll-link" href="#section-1"><i class="fa fa-shopping-bag"></i> Shop</a>
-            </li>
-            <li>
-                <a class="scroll-link" href="#section-5"><i class="fa fa-cart-arrow-down"></i> Cart <span class="cart_count">500</span></a>
-            </li>
-            <li>
-                <a class="scroll-link" href="#section-5"><i class="fa fa-heart-o"></i> Whishlist <span class="cart_count">5</span></a>
-            </li>
-            <li>
-                <a data-toggle="collapse" aria-expanded="false" class="dropdown-toggle otherSections" role="button" aria-controls="otherSections">
-                    <i class="fa fa-list"></i>Category
-                </a>
-                <div class="drp-menu">
-                    <ul class="collapse list-unstyled animate__animated animate__slideInLeft" id="otherSections">
-                        <li>
-                            <a class="scroll-link" href="#section-3">Our projects</a>
-                        </li>
-                        <li>
-                            <a class="scroll-link" href="#section-4">We think that...</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li>
-                <a class="scroll-link" href="#section-6"><i class="fa fa-envelope"></i> Contact us</a>
-            </li>
-            <li>
-                <a class="scroll-link" href="#section-2"><i class="fa fa-user"></i> About us</a>
-            </li>
-        </ul>
-    </nav>
-    <!-- End sidebar -->
+        <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+    </ul>
 </div>

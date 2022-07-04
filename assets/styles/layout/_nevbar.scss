@@ -13,6 +13,11 @@ a:hover, a:focus {
 .wrapper {
   display: block;
 }
+
+.menu_icon{
+  color: white;
+}
+
 /***** Sidebar *****/
 .sidebar {
   width: 250px;
@@ -135,10 +140,7 @@ a:hover, a:focus {
   opacity: 1;
 }
 /***** Content *****/
-//.open-menu {
-//  position: fixed;
-//  top: 20px;
-//  left: 10px;
-//  z-index: 997;
-//  box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.2);
-//}
+.open-menu {
+  border: none;
+  background: none;
+}

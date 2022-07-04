@@ -9,5 +9,19 @@ jQuery(document).ready(function (){
 
     $('.closebtn').on('click', function (){
         $(so).removeClass('active');
+        $(so).addClass('closing');
+        $(so).one("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
+            $(so).removeClass('closing');
+        });
+    });
+
+    $(so).on('click', function (){
+        $(so).removeClass('active');
+        $(so).addClass('closing');
+        $(so).one("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
+            $(so).removeClass('closing');
+        });
+    }).children().click(function(e) {
+        return false;
     });
 });

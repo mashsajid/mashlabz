@@ -82,9 +82,9 @@
 
 .cart_count{
 	position: absolute;
-	border-radius: 50%;
+	border-radius: 90px;
 	background-color: $red;
-	width: 20px;
+	width: 30px;
 	height: 20px;
 	margin-left: 8px;
 	text-align: center;
@@ -220,80 +220,7 @@
 
 @media #{$tab} {
 	.main_menu {
-		padding: 26px 0px;
-	}
-
-	.home_menu .main-menu-item {
-		padding-left: 0px;
-	}
-
-	.main_menu .main-menu-item {
-		text-align: left !important;
-
-		.nav-item {
-			padding: 10px 15px !important;
-
-			.nav-link {
-				padding: 5px 15px !important;
-				color: $white_color;
-			}
-		}
-	}
-
-	.navbar-collapse {
-		z-index: 9999 !important;
-		position: absolute;
-		left: 0;
-		top: 50px;
-		width: 100%;
-		background-color: $white-color;
-		text-align: center !important;
-	}
-
-	.dropdown {
-		.dropdown-menu {
-			transform: scale(1, 0);
-			display: none;
-			margin-top: 10px;
-		}
-
-		&:hover {
-			.dropdown-menu {
-				transform: scale(1);
-				display: block;
-				color: $secondary_color;
-			}
-		}
-
-		.dropdown-item:hover {
-			color: $secondary_hover !important;
-		}
-	}
-
-	.navbar-brand img {
-		max-width: 100px;
-		margin: 0 auto;
-		position: absolute;
-		left: 0;
-		right: 0;
-		display: inline-block;
-		top: 0;
-	}
-
-	.navbar-light .navbar-toggler {
-		border-color: transparent;
-		position: absolute;
-		left: 0;
-	}
-
-	.menu_icon{
-		i{
-			color: $white_color;
-			
-		}
-	}
-	.main_menu a i {
-		margin-left: 13px;
+		padding: 20px 0px;
 	}
 }
 
