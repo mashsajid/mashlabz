@@ -1,5 +1,5 @@
 .breadcrumb_bg {
-	@include background("../../img/breadcrumb.png");
+	@include background("../../img/contact.jpg");
 }
 
 .breadcrumb {
@@ -17,7 +17,7 @@
 			vertical-align: middle;
 
 			h2 {
-				color: $font_2;
+				color: $white;
 				font-size: 36px;
 				font-weight: 700;
 				margin-bottom: 10px;
@@ -41,7 +41,7 @@
 
 			p {
 				font-size: 15px;
-				color: $font_7;
+				color: $font_8;
 			}
 
 			span {
