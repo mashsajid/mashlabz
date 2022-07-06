@@ -27,6 +27,8 @@ import './js/voice_recognition';
 
 import './js/searchbar';
 
+import './js/jquery.mCustomScrollbar.concat.min.js'
+
 // import './js/jquery.magnific-popup';
 //
 // import './js/swiper.min';
