@@ -1372,7 +1372,7 @@
     font-size: 14px;
     font-weight: normal;
     font-family: $body-font;
-    background: $section_bg;
+    background: $secondary_color;
     line-height: 40px;
     padding-left: 30px;
     margin-bottom: 0px;
@@ -1489,7 +1489,6 @@
   margin-bottom: 40px;
 
   input {
-    margin-left: 30px;
     max-width: 730px;
     width: 100%;
     display: block;
@@ -1547,7 +1546,7 @@
 
       input {
         border-radius: 3px;
-        color: $text-color;
+        color: $black;
 
         @include placeholder {
           color: $text-color;
@@ -1561,7 +1560,10 @@
       }
 
       .country_select {
+        height: 40px;
         width: 100%;
+        border-radius: 3px;
+        color: $black;
 
         span {
           color: $text-color;
@@ -1597,14 +1599,14 @@
 }
 
 .order_box {
-  background: $section_bg;
+  background: $secondary_color;
   padding: 30px;
 
   h2 {
     border-bottom: 1px solid #dddddd;
     font-size: 18px;
     font-weight: 500;
-    color: $title-color;
+    color: $white;
     padding-bottom: 15px;
   }
 
@@ -1612,7 +1614,7 @@
     li {
       a {
         font-size: 14px;
-        color: $text-color;
+        color: $white;
         font-weight: normal;
         border-bottom: 1px solid #eeeeee;
         display: block;
@@ -1625,18 +1627,9 @@
         .middle {
           float: none;
           width: 50px;
-          text-align: right;
           display: inline-block;
-          margin-left: 30px;
-          color: $title-color;
-        }
-      }
-
-      &:nth-child(4) {
-        a {
-          .middle {
-            margin-left: 48px;
-          }
+          margin-left: 3px;
+          color: $white;
         }
       }
     }
@@ -1646,11 +1639,11 @@
     li {
       a {
         text-transform: uppercase;
-        color: $title-color;
+        color: $white;
         font-weight: 500;
 
         span {
-          color: $text-color;
+          color: $white;
           text-transform: capitalize;
         }
       }
@@ -1658,7 +1651,7 @@
       &:last-child {
         a {
           span {
-            color: $title-color;
+            color: $white;
           }
         }
       }
@@ -1710,6 +1703,9 @@
     p {
       background: #fff;
       padding: 20px;
+      color: $black;
+      font-weight: 400;
+      border-radius: 3px;
     }
 
     &.active {
@@ -1732,7 +1728,7 @@
     }
 
     a {
-      color: $primary-color;
+      color: $blue-100;
     }
   }
 
@@ -1869,8 +1865,8 @@
 }
 
 .radion_btn input[type="radio"]:checked~.check {
-  border: 1px solid $primary-color;
-  background: $primary-color;
+  border: 1px solid $blue;
+  background: $blue;
 }
 
 .radion_btn input[type="radio"]:checked~.check::before {
@@ -1878,7 +1874,7 @@
 }
 
 .radion_btn input[type="radio"]:checked~label {
-  color: #000;
+  color: $blue;
 }
 .login_part{
   .login_part_text, .login_part_form{

@@ -1,0 +1,81 @@
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: aliceblue;
+  border-radius: 0.25rem;
+}
+
+.card-header {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: $secondary_color;
+  border-bottom: 1px solid #fff;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem;
+  background-color: $secondary_color;
+}
+
+.my-4 hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid white;
+}
+
+.cart_area .cupon_area{
+  background-color: $secondary_color;
+}
+
+.card-body .form-label {
+  color: #fff;
+}
+
+.card-body .list-group .list-group-item {
+  color: #fff;
+  background-color: $secondary_color;
+}
+
+.badge {
+  background-color: #6394F8;
+  color: white;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1;
+  padding: 3px 7px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.form-outline input {
+  background-color: $secondary_color;
+  text-align: center;
+  border: none;
+  color: $white;
+}
+
+.form-outline input:focus {
+  background-color: $secondary_color;
+  color: $white;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.form-outline input::-webkit-outer-spin-button,
+.form-outline input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.form-outline input[type=number] {
+  -moz-appearance: textfield;
+}
